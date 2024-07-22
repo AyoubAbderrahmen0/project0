@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vite/client", "@types/node"],
+    "allowJs": true,
+    "outDir": "./dist", // Répertoire de sortie
+    "noEmit": false // Assurez-vous que l'émission est activée
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.vue",
+    "./**/*.js"
+  ],
+  "exclude": ["node_modules"]
+}
+/* {
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+} */
